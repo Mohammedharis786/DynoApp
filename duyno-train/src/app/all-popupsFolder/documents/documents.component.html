@@ -1,0 +1,30 @@
+<ion-content class="content">
+  <ion-grid>
+    <ion-row>
+      <ion-col><span class="doc">Documents</span></ion-col>
+      <ion-col class="pin-img"><img class="pin" src="./assets/9104255_pin_mark_marker_important_icon 1.png"
+          alt=""></ion-col>
+      <ion-col class="cross-img"><img class="cross-mark" src="./assets/cut.png" alt=""></ion-col>
+    </ion-row>
+    <div *ngIf="isEditMode">
+      <ion-row>
+        <ion-label>Title</ion-label>
+        <ion-input class="name" type="text"></ion-input>
+      </ion-row>
+      <ion-row class="main">
+        <ion-col class="uplad">
+          <!-- <input type="file" (change)="onFileSelected($event)"> -->
+
+          <img [src]="url" height="200"> <br />
+          <input type='file' (change)="onSelectFile($event)">
+          <img class="upload-img" src="./assets/Group 78.png" alt="">
+        </ion-col>
+      </ion-row>
+
+    </div>
+    <ion-row>
+      <ion-col><img src="./assets/Group 12.png" alt=""></ion-col>
+      <ion-col><img src="./assets/Group 13.png" alt=""></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,76 @@
+<div class="container">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="folder-content">
+          <div>
+            <ion-img class="folder" src="./assets/Layer 38.png"></ion-img>
+          </div>
+         <div class="spm"> <span class="vis">Vision</span></div>
+        </div>
+        
+       
+      </ion-col>
+      <ion-col>
+        <div class="imagesData">
+          <div class="allL0go">
+            <img class="pencil" src="./assets/pencil 1.png" alt=""  (click)="isEdit()" *ngIf="!isEditMode" (click)="openPopup($event)">
+            <img  class="save-btn" src="./assets/save btn.png" alt="" (click)="saveChanges()" *ngIf="isEditMode">
+            <img class="cancel-btn" src="/assets/cancel btn.png" (click)="closeEdit()" *ngIf="isEditMode">
+            <img class="message" src="./assets/Group 48.png" alt="">
+            <img class="three-dot" src="./assets/Group 26.png" alt=""  (click)="openPopup($event)">
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+
+ 
+
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-label class="text-color">Title</ion-label>
+          <ion-input class="put" type="text" [value]="textValue" [readonly]="!isEditMode" ></ion-input>
+         
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>    
+      <ion-col>
+        <div>
+          <ion-label class="text-color">Description</ion-label>
+          <ion-input class="put" type="text" [value]="textValue" [readonly]="!isEditMode" ></ion-input>
+        </div>
+      </ion-col>
+      <ion-content>
+        <app-popup [isEditMode]="isEditMode"></app-popup>
+      </ion-content>
+    </ion-row> 
+  </ion-grid>
+
+  <ion-footer [translucent]="true" class="footer">
+    <ion-toolbar>
+      <ion-row>
+        <ion-col>
+          <div class="history-tab">
+            <div>
+              <img class="his-icon" src="./assets/326655_history_icon 1.png" alt="">
+            </div>
+            <div>
+              <img  class="mask-img"src="./assets/Mask group.png" alt="">
+            </div>
+            <div class="content1">
+              <div class="last-modify"> <p class="last">Last Modificationat :</p></div>
+              <div class="main-span"><span class="span-ity">28 Mar 2022</span></div>
+              
+             <div class="main-span"> <span class="span-ity">11:07 am</span></div>
+             
+            </div> 
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+</div>

@@ -1,0 +1,26 @@
+<ion-grid >
+  <ion-row>
+    <ion-col class="maincard"size="12" size-md="6" size-lg="4" *ngFor="let cards of cardsdata" (click)="cardData(cards)">
+      <ion-card>
+        <ion-row>
+          <ion-col>
+            <img class="imgurl" src="{{cards.imageurl}}" alt="">
+          </ion-col>
+        <ion-col><div class="title">{{cards.title}}</div></ion-col>
+        </ion-row>
+        <ion-card-content>
+          <ion-row>
+            <ion-col class="tags">{{cards.tags}}</ion-col>
+          </ion-row>
+        </ion-card-content>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              {{cards.text}}
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

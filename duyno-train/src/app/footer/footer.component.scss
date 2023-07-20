@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+}
+
+.question-img {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.tibil-logo {
+    width: 33px;
+    height: 33px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: 56rem;
+    top: 20px;
+}
+
+.ballon {
+    width: 33px;
+    height: 33px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+
+
+// @media screen  and (min-width:950px){
+//    .habberger-sidenav {
+//     .sideMenubar{
+//         visibility: visible;
+//     }
+//     }
+// }

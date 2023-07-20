@@ -1,0 +1,45 @@
+.sideMenubar {
+
+    position: sticky;
+    display: inline-block;
+    height: 720px;
+    background: #42BFDD;
+    box-shadow: 0 -2px 4px #42bfdd1a, 0 4px 4px #42bfdd1a;
+    border-radius: 0 8px 8px 0;
+    width: 180px;
+    margin-top: 10px;
+
+}
+// .sideMenuBarDiv{
+//     height: 700px;
+// }
+
+.hamberger {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 1.5rem 1rem;
+}
+
+//   .menuButton img {
+//     width: 100px; 
+//     height: auto; 
+//   }  
+@media screen  and (max-width:1457px){
+    .sideMenubar{
+        height: 667px;
+    }
+    
+} 
+
+// @media screen  and (max-width:950px){
+//     .sideMenubar{
+//         visibility: hidden;
+//     }
+// }

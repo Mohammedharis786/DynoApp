@@ -1,0 +1,7 @@
+{
+  "name": "duyno-train",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

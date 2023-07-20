@@ -1,0 +1,10 @@
+<ion-content  class="container">
+  <ion-list  class="content">
+    <div><span class="new">Add a new</span></div>
+    <div class="newData" *ngFor="let ele of rawData"  (click)="openPoppOver(ele)">
+      <img class="totla-content" [src]="ele.images" alt="">
+      <span>{{ele.text}}</span>
+   </div>
+  </ion-list>
+  <!-- <app-addnewpopup [folder]="rawData" ></app-addnewpopup> -->
+</ion-content>

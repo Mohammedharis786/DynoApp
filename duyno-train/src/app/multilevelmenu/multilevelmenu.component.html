@@ -1,0 +1,36 @@
+<div class="flex-container">
+  <div class="content">
+    <li class="all-ele" *ngFor="let listItem of multibar" (click)="toggleList(listItem)">
+      <ion-row class="elements">
+        <ion-col class="listed-item">
+          <ion-img class="arrow" src="{{listItem.icon}}"></ion-img>
+        </ion-col>
+        <ion-col class="listed1">
+          <ion-img class="folder" src="{{listItem.image}}"></ion-img>
+        </ion-col>
+        <ion-col class="listed2">
+          <span class="write">{{listItem.text}}</span>
+        </ion-col>
+        <!-- <div #buttonContainer></div> -->
+        <!-- <ion-icon name="arrow-dropright"></ion-icon> -->
+
+        <ul *ngIf="listItem.showSubItems">
+          
+          <li *ngFor="let item of listItem.subitems">
+            <ion-row class="ele">
+              <ion-col class="arrow1">
+                <ion-img src="{{item.icon}}"></ion-img>
+              </ion-col>
+              <ion-col class="folder1">
+                <ion-img src="{{item.image}}"></ion-img>
+              </ion-col>
+              <ion-col class="write1">
+                <span>{{item.text}}</span>
+              </ion-col>
+            </ion-row>
+          </li>
+        </ul>
+      </ion-row>
+    </li>
+  </div>
+</div>

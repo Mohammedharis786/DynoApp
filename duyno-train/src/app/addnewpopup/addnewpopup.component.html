@@ -1,0 +1,63 @@
+<div class="container">
+  <form action="">
+    <ion-row>
+      <ion-col><span class="names-all">{{folder.name}}</span></ion-col>
+      <ion-col><img class="cross-img" src="./assets/cut.png" alt="" (click)="closePopup()"></ion-col>
+    </ion-row>
+    <div class="form-container">
+      <ion-row class="input-label">
+        <ion-label class="label" for="inputFields1">Title</ion-label>
+        <ion-input class="inputs" labelPlacement="floating"></ion-input>
+      </ion-row>
+      <ion-row class="text">
+        <ion-label class="label1" for="inputFields2">Description</ion-label>
+        <ion-input class="inputs"></ion-input>
+      </ion-row>
+      <ion-row>
+        <span class="select">Select folder</span>
+      </ion-row>
+      <ion-row class="two-col">
+        <ion-col class="url"><span class="urltext">{{folder.url}}</span></ion-col>
+        <ion-col><img class="change-img" src="./assets/change 1.png" alt="" (click)="changeButton()"><span
+            class="change-btn">change</span></ion-col>
+      </ion-row>
+    </div>
+    <div *ngIf="visible" class="flex-container">
+      <div class="container">
+        <li *ngFor="let data of peopleData" (click)="toggleItem(data)">
+          <ion-row>
+            <input class="radio" type="checkbox" (ngModel)="data.checked" (change)="updatedCheckbox(data)" />
+            <ion-col>
+              <img class="clipboard" src="{{data.image}}" alt="">
+              <span>{{data.text}}</span>
+            </ion-col>
+          </ion-row>
+          <ul>
+            <li *ngFor="let item of multibar">
+              <ion-row>
+                <input type="checkbox" (ngModel)="item.checked" (change)="updatedCheckbox(item)"  />
+                <ion-col>
+                  <img class="fold" src="{{item.image}}" alt="">
+                </ion-col>
+                <ion-col>
+                  <span class="text-item">{{item.text}}</span>
+                </ion-col>
+              </ion-row>
+
+            </li>
+          </ul>
+
+        </li>
+      </div>
+
+    </div>
+
+
+    <div>
+      <ion-row class="btn-btn">
+        <ion-button class="cancel-btn">cancel</ion-button>
+        <ion-button class="save-btn" (click)="add()">save</ion-button>
+      </ion-row>
+    </div>
+  </form>
+</div>

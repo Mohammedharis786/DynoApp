@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "image":"./assets/Group 290.png",
+        "url":"dash"
+    },
+    
+    {
+        "id":2,
+        "image":"./assets/Group 303.png",
+        "url":"product"
+    },
+    {
+        "id":3,
+        "image":"./assets/Group 291.png",
+        "url":"part"
+    },
+    {
+        "id":4,
+        "image":"./assets/Group 382.png",
+        "url":"resource"
+    },
+    {
+        "id":5,
+        "image":"./assets/Group 288.png",
+        "url":"setting"
+    }
+
+]

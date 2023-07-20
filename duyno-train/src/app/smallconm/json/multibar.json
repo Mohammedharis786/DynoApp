@@ -1,0 +1,73 @@
+[
+    {
+        "icon": "./assets/Polygon 3.png",
+        "image": "./assets/Layer 38.png",
+        "text": "Vision",
+        "showSubItems": false,
+        "id":"vission",
+        "subitems": [
+            {
+                "icon": "./assets/Polygon 3.png",
+                "image": "./assets/Layer 38.png",
+                "text": "vision1"
+            }
+                     
+        ]
+    },
+    {
+        "icon": "./assets/Polygon 3.png",
+        "image": "./assets/Layer 38.png",
+        "text": "Stories",
+        "showSubItems": false,
+        "id":"stori",
+        "subitems": [
+            {
+                "icon": "./assets/Polygon 3.png",
+                "image": "./assets/Layer 38.png",
+                "text": "story1"
+            }
+        ]
+    },
+    {
+        "icon": "./assets/Polygon 3.png",
+        "image": "./assets/Layer 38.png",
+        "text": "User Interface",
+        "showSubItems": false,
+        "id":"userin",
+        "subitems": [
+            {
+                "icon": "./assets/Polygon 3.png",
+                "image": "./assets/Layer 38.png",
+                "text": "UI 1"
+            }
+        ]
+    },
+    {
+        "icon": "./assets/Polygon 3.png",
+        "image": "./assets/Layer 38.png",
+        "text": "Scenarios",
+        "showSubItems": false,
+        "id":"scenario",
+        "subitems": [
+            {
+                "icon": "./assets/Polygon 3.png",
+                "image": "./assets/Layer 38.png",
+                "text": "journey"
+            }
+        ]
+    },
+    {
+        "icon": "./assets/Polygon 3.png",
+        "image": "./assets/Layer 38.png",
+        "text": "Parts",
+        "showSubItems": false,
+        "id":"part",
+        "subitems": [
+            {
+                "icon": "./assets/Polygon 3.png",
+                "image": "./assets/Layer 38.png",
+                "text": "front end"
+            }
+        ]
+    }
+]

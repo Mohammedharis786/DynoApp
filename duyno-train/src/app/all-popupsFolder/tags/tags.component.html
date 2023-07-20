@@ -1,0 +1,46 @@
+<ion-content class="content">
+  <ion-grid>
+   <ion-row>
+     <ion-col><span class="doc">Tags</span></ion-col>
+     <ion-col class="pin-img"><img class="pin" src="./assets/9104255_pin_mark_marker_important_icon 1.png" alt=""></ion-col>
+     <ion-col class="cross-img"><img class="cross-mark" src="./assets/cut.png" alt=""></ion-col>
+   </ion-row>
+   <div>
+    <ion-content *ngIf="isEditMode">
+  <ion-item>
+    <ion-input [(ngModel)]="searchText" placeholder="Search"></ion-input>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let name of filterNames()">
+      <ion-label>{{ name }}</ion-label>
+      <ion-checkbox  (ionChange)="toggleName(name)"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-card *ngIf="selectedNames.length > 0">
+    <!-- <ion-card-header>
+      SelectedNames
+    </ion-card-header> -->
+    <!-- <ion-card-content> -->
+      <ion-list>
+        <ion-card *ngFor="let name of selectedNames" class="card">
+          {{ name }}
+        </ion-card>
+      </ion-list>
+    <!-- </ion-card-content> -->
+  </ion-card>
+
+  <ion-card *ngIf="selectedNames.length === 0 && searchText">
+    <ion-card-content>
+      No names found.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+   </div>
+   <ion-row>
+     <ion-col class="back"><span>Client vision</span></ion-col>
+     <ion-col class="back"><span>Product 24</span></ion-col>
+   </ion-row>
+  </ion-grid>
+</ion-content>

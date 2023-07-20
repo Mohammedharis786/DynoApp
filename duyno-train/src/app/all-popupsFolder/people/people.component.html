@@ -1,0 +1,36 @@
+<ion-content class="content">
+  <ion-grid>
+    <ion-row>
+      <ion-col><span class="doc">People</span></ion-col>
+      <ion-col class="pin-img"><img class="pin" src="./assets/9104255_pin_mark_marker_important_icon 1.png"
+          alt=""></ion-col>
+      <ion-col class="cross-img"><img class="cross-mark" src="./assets/cut.png" alt=""></ion-col>
+    </ion-row>
+    <div *ngIf="isEditMode">
+      <ion-item>
+        <ion-input [(ngModel)]="searchItems" placeholder="Search"></ion-input>
+      </ion-item>
+
+      <ion-list>
+        <ion-item *ngFor="let tag of filtersText()">
+          <ion-label>{{tag}}</ion-label>
+          <ion-checkbox slot="start" text="checkbox" (ionchange)="toggleList(tag)"></ion-checkbox>
+        </ion-item>
+      </ion-list>
+      <ion-card *ngIf="selectedIte.length > 0">
+        <ion-list>
+          <ion-card *ngFor="let event of selectedIte">
+            {{event}}
+          </ion-card>
+        </ion-list>
+       
+      </ion-card>
+
+    </div>
+
+    <ion-row>
+      <ion-col class="back"><img src="./assets/Mask .png" alt=""><span>John Doe</span></ion-col>
+      <ion-col class="back"><img src="./assets/Group 7.png" alt=""><span>Jane who</span></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

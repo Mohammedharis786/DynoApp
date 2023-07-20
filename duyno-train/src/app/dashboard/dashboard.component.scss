@@ -1,0 +1,36 @@
+.tags {
+    border: 1px solid #BBE6E4;
+    border-radius: 13px;
+    margin-right: 38px;
+}
+
+.title {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    position: absolute;
+    left: -8.5rem;
+    top: 1.5rem;
+
+}
+
+
+
+.imgurl {
+    margin-left: 0.9rem;
+}
+
+.imgblack {
+    margin-left: -50px;
+    z-index: -3;
+}
+
+@media screen and (max-width: 600px) {
+    .maincard {
+       width: 100%;
+    }
+}

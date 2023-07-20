@@ -1,0 +1,132 @@
+.content {
+    width: 550px;
+    height: 320px;
+}
+
+.cross-mark {
+    width: 20px;
+    height: 20px;
+
+}
+
+.pin {
+    width: 30px;
+    height: 30px;
+    margin-right: -10rem;
+}
+
+.pin-img {
+    margin-right: -20rem;
+}
+
+.cross-img {
+    margin-right: -23rem;
+}
+
+.doc {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.com {
+    text-align: center;
+    align-items: center;
+}
+
+.select {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(167, 167, 167, 1);
+    margin-left: 10px;
+
+}
+
+.plan {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(65, 65, 65, 1);
+    border-bottom: 1px solid rgba(151, 241, 236, 0.966);
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 500px;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.fold-img {
+    width: 20px;
+    height: 17px;
+    // padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.span-tag {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(65, 65, 65, 1);  
+    padding: 10px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+   
+}
+.checkbox{
+    color: rgba(66, 191, 221, 1);
+    border-radius: 50px;
+   margin-left: 5px;
+    
+}
+
+.btn-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    top: 280px;
+}
+
+.cancel-btn {
+    --background: white;
+    color: rgba(66, 191, 221, 1);
+    border: 1px solid rgba(66, 191, 221, 1);
+    box-shadow: 0 px 4px 4px 0px rgba(66, 191, 221, 1);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 112px;
+
+}
+
+.save-btn {
+    --background: rgba(66, 191, 221, 1);
+    color: white;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 112px;
+}

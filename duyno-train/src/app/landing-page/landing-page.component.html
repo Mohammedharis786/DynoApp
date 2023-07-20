@@ -1,0 +1,31 @@
+<div class="main-content">
+  <div>
+    <app-header></app-header>
+  </div>
+  <div class="flex">
+    <div class="multi-level">
+      <app-multilevelmenu (selectedOption)="updateSelectedOption($event)"></app-multilevelmenu>
+    </div>
+    <div class="main">
+      <ion-row>
+        <ion-col  [ngSwitch]="selectedOption">
+          <ng-container *ngSwitchCase="'vission'">
+          <app-app-vision></app-app-vision>
+        </ng-container>
+        <ng-container  *ngSwitchCase="'stori'">
+          <app-stories ></app-stories>
+        </ng-container>
+          <ng-container *ngSwitchCase="'userin'">
+            <app-user-interface ></app-user-interface>
+          </ng-container>
+          <ng-container  *ngSwitchDefault>
+            <app-maincontent></app-maincontent>  
+          </ng-container>
+       
+        </ion-col>
+
+      </ion-row>
+    </div>
+  </div>
+
+</div>

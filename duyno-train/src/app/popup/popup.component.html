@@ -1,0 +1,148 @@
+<ion-content class="container" *ngIf="!isEditMode">
+  <ion-list class="content">
+    <div>
+      <ion-item>
+        <div>
+          <div>
+            <img class="doc" src="./assets/4634980_safe_bank_financial_money_icon 1.png" alt="" (click)="openPopup($event)">
+          </div>
+          <div>
+            <span>Documents</span>
+          </div>
+        </div>
+      </ion-item>
+    </div>
+    <div>
+     
+      <ion-item>
+        <div>
+          <div> <img class="people" src="./assets/8675143_ic_fluent_person_regular_icon 1.png" alt="" (click)="openPopup1()"></div>
+       
+          <div>
+            <span>People</span>
+          </div>
+        </div>
+       
+       
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <div>
+          <div>
+            <img class="tag" src="./assets/tag.png" alt="" (click)="openPopup2()">
+          </div>
+          
+          <div>
+            <span>Tags</span>
+          </div>
+        </div>
+       
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <div>
+          <div>
+            <img class="item" src="./assets/linked item.png" alt="" (click)="openPopup3()">
+          </div>
+          
+          <div>
+            <span>Linked items</span>
+          </div>
+        </div>
+       
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <div>
+          <div>
+            <img class="fold" src="./assets/Layer 38.png" alt=""(click)="openPopup4()" >
+          </div>
+        
+          <div>
+            <span>Folder</span>
+          </div>
+        </div>
+       
+      </ion-item>
+    </div>
+
+
+  </ion-list>
+</ion-content>
+   <!-- //-------------------------------------------------------------  -->
+      <!-- //-------------------------------------------------------------  -->
+
+<ion-content  *ngIf="isEditMode">
+  <ion-list>
+    <div>
+      <ion-item>
+        <div>
+          <div>
+            <img class="doc" src="./assets/add vault.png" alt="" (click)="openPopup($event)">
+          </div>
+          <div>
+            <span> Upload Documents</span>
+          </div>
+        </div>
+      </ion-item>
+    </div>
+    <div>
+     
+      <ion-item>
+        <div>
+          <div> <img class="people" src="./assets/8675208_ic_fluent_person_add_regular_icon 1.png" alt="" (click)="openPopup1()"></div>
+       
+          <div>
+            <span> Add People</span>
+          </div>
+        </div>
+       
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <div>
+          <div>
+            <img class="tag" src="./assets/Add-tag.png" alt="" (click)="openPopup2()">
+          </div>
+          
+          <div>
+            <span>Add Tags</span>
+          </div>
+        </div>
+       
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <div>
+          <div>
+            <img class="item" src="./assets/Add linked.png" alt="" (click)="openPopup3()">
+          </div>
+          
+          <div>
+            <span>Linked items</span>
+          </div>
+        </div>
+       
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <div>
+          <div>
+            <img class="fold" src="./assets/change 1.png" alt="" (click)="openPopup4()">
+          </div>
+        
+          <div>
+            <span>Change folder</span>
+          </div>
+        </div>
+       
+      </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

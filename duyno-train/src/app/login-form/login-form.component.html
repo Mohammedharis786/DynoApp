@@ -1,0 +1,75 @@
+<ion-grid>
+  <ion-row class="container">
+    <ion-col class="text-form" size="6">
+      <div>
+        <ion-row class="logo1">
+          <p><img class="image-logo" src="../assets/Dyno logo.png">Ti Dyno</p>
+        </ion-row>
+        <ion-row class="sales-enable">
+          <p class="sales">Sales Enabler & Solutions Accelerator</p>
+        </ion-row>
+      </div>
+
+    </ion-col>
+
+
+
+    <ion-col size="6" class="input-form">
+      <div class="main-cls">
+        <div>
+          <form [formGroup]="userForm" (submit)="onSubmit()">
+            <div class="coded" *ngIf="!otpFormNotification">
+              <ion-grid>
+                <ion-row class="style-scope">
+                  <input class="email" type="email" placeholder="Email ID" (click)="enableButton()"
+                    formControlName="email">
+                </ion-row>
+                <!-- <ion-row>
+            <p class="ptag">Time remaining : 01:03</p>
+          </ion-row> -->
+                <ion-row>
+                  <ion-button class="btn-btn" (click)="showOtpForm()" [disabled]="!this.userForm.get('email').valid">Next</ion-button>
+                  <div *ngIf="userForm.invalid && (userForm.touched  || userForm.dirty)">
+                    <span class="error" *ngIf="userForm.get('email').hasError('required')">*email is required</span>
+                    <span class="error" *ngIf="userForm.get('email').hasError('pattern')">*Enter the correct email</span>
+                  </div>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </form>
+          <!-- otp form with text field and login button -->
+         
+          <div class="coded" *ngIf="otpFormNotification">
+            <ion-grid>
+              <ion-row class="style-scope">
+                <input class="otp" type="number" placeholder="Enter otp" [(ngModel)]="inputValue">
+              </ion-row>
+              <ion-row>
+                <p class="ptag">Time remaining :<span class="digit">{{displayTimer}}</span> </p>
+                <p  class="error1">{{errorMessage}}</p>
+              </ion-row>
+              <ion-row>
+                <a routerLink="/layout"><ion-button  *ngIf="showLoginButton" class="btn-btn1" (click)="homepge()" [disabled]="isInputEmpty()">login</ion-button></a>
+                
+                <ion-button  *ngIf="showOtpButton" class="btn-btn1" (click)="changingButton()">Resend OTP</ion-button>
+              </ion-row>
+
+            </ion-grid>
+          </div>
+        </div>
+
+
+        <div class="sign-btn">
+          <ion-row>
+            <ion-button class="btn">Sign with Google <img class="image-google" src="../assets/Google__G__Logo 1.png"
+                alt="Google logo"></ion-button>
+
+          </ion-row>
+        </div>
+      </div>
+ 
+
+
+    </ion-col>
+  </ion-row>
+</ion-grid>

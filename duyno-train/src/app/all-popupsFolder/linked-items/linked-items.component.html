@@ -1,0 +1,42 @@
+<ion-content class="content">
+  <ion-grid>
+   <ion-row>
+     <ion-col><span class="doc">Linked item</span></ion-col>
+     <ion-col class="pin-img"><img class="pin" src="./assets/9104255_pin_mark_marker_important_icon 1.png" alt=""></ion-col>
+     <ion-col class="cross-img"><img class="cross-mark" src="./assets/cut.png" alt=""></ion-col>
+   </ion-row>
+   <ion-row>
+    <div *ngIf="isEditMode">
+      <ion-row>
+        <ion-col>
+          <ul>
+            <li *ngFor="let item of multibar">
+              <ion-row>
+                <input type="checkbox" class="input-check" (change)="displayText(item)">
+                <img class="item-folder" src="{{item.image}}" alt="">
+                <span class="text-item">{{item.text}}</span>
+              </ion-row>
+             
+            </li>
+          </ul>
+        </ion-col>
+        <ion-col class="selectnames">
+          <div class="cards">
+            <div *ngFor="let name of selectedNames" class="card">
+              {{name}}
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      
+  
+  </div>
+</ion-row>
+
+
+   <ion-row>
+     <ion-col class="back"><img class="story" src="./assets/liked-book.png" alt=""><span>Story 1</span></ion-col>
+     <ion-col class="back"><img class="ui" src="./assets/ui.png" alt=""><span>UI 1</span></ion-col>
+   </ion-row>
+  </ion-grid>
+</ion-content>

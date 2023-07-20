@@ -1,0 +1,41 @@
+<ion-content class="content">
+  <ion-grid>
+    <ion-row>
+      <ion-col><span class="doc">Folder</span></ion-col>
+      <ion-col class="pin-img"><img class="pin" src="./assets/9104255_pin_mark_marker_important_icon 1.png"
+          alt=""></ion-col>
+      <ion-col class="cross-img"><img class="cross-mark" src="./assets/cut.png" alt="" (click)="closePopup()"></ion-col>
+    </ion-row>
+    <div *ngIf="isEditMode">
+      <ion-row>
+        <span class="select">Select Folder</span>
+      </ion-row>
+      <ion-row>
+        <span class="plan">/paln/vision</span>
+      </ion-row>
+      <ion-row>
+        <ul>
+          <li *ngFor="let data of multibar">
+            <input type="checkbox" class="checkbox">
+            <img class="fold-img" src="{{data.image}}" alt="">
+            <span class="span-tag">{{data.text}}</span>
+          </li>
+        </ul>
+      </ion-row>
+      
+    </div>
+    <ion-row>
+      <div>
+        <ion-row class="btn-btn">
+          <ion-button class="cancel-btn">cancel</ion-button>
+          <ion-button class="save-btn" >save</ion-button>
+        </ion-row>
+      </div>
+    </ion-row>
+
+    <ion-row *ngIf="!isEditMode">
+      <ion-col class="com"><span>/Plan/Vision</span></ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

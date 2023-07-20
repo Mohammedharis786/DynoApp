@@ -1,0 +1,71 @@
+.content {
+    width: 550px;
+    height: 246px;
+    max-width: 750px;
+}
+
+.cross-mark {
+    width: 20px;
+    height: 20px;
+
+}
+
+.pin {
+    width: 30px;
+    height: 30px;
+    margin-right: -10rem;
+}
+
+.pin-img {
+    margin-right: -20rem;
+}
+
+.cross-img {
+    margin-right: -23rem;
+}
+
+.doc {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.name {
+    border-bottom: 1px solid rgba(187, 230, 228, 1);
+    width: 530px;
+    margin-top: -20px;
+    padding-left: 40px;
+}
+
+ion-label{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(167, 167, 167, 1);
+    width: 27px;
+    height: 12px;
+    margin-left: 10px;
+
+}
+.upload-img{
+    width: 51px;
+    height: 42px;
+    margin-left: 210px;
+    margin-top: 77px;
+}
+.uplad{
+    border-style: dotted;
+    width: 530px;
+    height: 232px;
+    border-color: rgb(141, 198, 195);
+}
+.main{
+  margin-top: 20px;
+}
